@@ -1,2 +1,3 @@
 getmac
 python-dotenv
+requests

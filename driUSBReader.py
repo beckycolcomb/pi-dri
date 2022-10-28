@@ -1,4 +1,4 @@
-from consts import DRI_LOG_FILE, DRI_SENSOR_ID, DRI_USB_DEVICE, MR_FUSION_DETECTION_ENDPOINT, AEROTRACKER_DETECTION_ENDPOINT, DRI_FREQUENCY_SECONDS
+from consts import *
 import json, serial, requests, os, time
 from datetime import datetime
 

@@ -1,0 +1,20 @@
+import os, datetime
+from dotenv import load_dotenv
+
+load_dotenv()
+
+DRI_LOG_FILE = "DRI-{0}.csv".format(datetime.datetime.today().strftime('%Y-%m-%d-%H:%M:%S'))
+
+DRI_SENSOR_ID = os.getenv("DRI_SENSOR_ID")
+DRI_USB_DEVICE = os.getenv("DRI_USB_DEVICE")
+
+MR_FUSION_DETECTION_ENDPOINT =  os.getenv("MR_FUSION_DETECTION_ENDPOINT")
+MR_FUSION_HEARTBEAT_ENDPOINT = os.getenv("MR_FUSION_HEARTBEAT_ENDPOINT")
+
+AEROTRACKER_DETECTION_ENDPOINT = os.getenv("AEROTRACKER_DETECTION_ENDPOINT")
+AEROTRACKER_HEARTBEAT_ENDPOINT = os.getenv("AEROTRACKER_HEARTBEAT_ENDPOINT")
+
+HEARTBEAT_FREQUENCY_SECONDS = int(os.getenv("HEARTBEAT_FREQUENCY_SECONDS"))
+DRI_FREQUENCY_SECONDS = int(os.getenv("DRI_FREQUENCY_SECONDS"))
+
+ENV = os.getenv("ENV")

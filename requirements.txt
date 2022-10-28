@@ -1,3 +1,4 @@
 getmac
 python-dotenv
 requests
+pyserial

@@ -1,5 +1,6 @@
 import logging, sys
 from consts import ENV
+
 if ENV == "dev":
     logging.basicConfig(
         level=logging.DEBUG, 

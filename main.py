@@ -2,7 +2,7 @@ import threading
 from consts import *
 from driUSBReader import dri_usb_reader_loop
 from hearbeat import heartbeat_loop
-from logging import logger
+from logger import logger
 
 last_heartbeat = [0]
 
